@@ -6,13 +6,13 @@ public class RD_followCameraScript : MonoBehaviour
     //public Transform thePlane;          //Public variable appears on script in unity editor, have to drag appropriate item from hierarchy to the slot in the inspector.
                                         //Not good for multiple objects or instantiated 
     //Method 2
-    RS_PlaneControl thePlaneScript;
+    RD_movementScript thePlaneScript;
     Transform thePlane;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        thePlaneScript = FindAnyObjectByType<RS_PlaneControl>();
+        thePlaneScript = FindAnyObjectByType<RD_movementScript>();
         thePlane = thePlaneScript.transform;
     }
 
