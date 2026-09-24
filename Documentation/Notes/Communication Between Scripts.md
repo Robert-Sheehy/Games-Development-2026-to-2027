@@ -42,3 +42,6 @@ public class RS_PlaneControl : MonoBehaviour
 
     int NextBombSlotIndex = 0;
 ```
+
+
+
