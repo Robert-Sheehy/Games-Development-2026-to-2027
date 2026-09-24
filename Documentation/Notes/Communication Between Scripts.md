@@ -9,5 +9,5 @@ Depending on the circumstance, different ways of communicating between (typicaal
 
 ## The Setup
 
-Sometimes only information about position, or orientation might be required, and sometimes we maay need more specific information to be passed back and forth between scripts. How the link is made defines everything. The easiest way is through a [public variable](.  
+Sometimes only information about position, or orientation might be required, and sometimes we maay need more specific information to be passed back and forth between scripts. How the link is made defines everything. The easiest way is through a [public variable](Variables_in_C_Sharp.md)
 
