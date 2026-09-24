@@ -26,4 +26,19 @@ If  a script is to be linked to another object throughh a variable, a public var
 
 E.g. 
 
-In our game, we wished to Instantiate bombs, to do this we created a Bomb Prefab.  The plane script had a public variable 
+In our game, we wished to Instantiate bombs, to do this we created a Bomb Prefab.  The plane script had a public variable theBombCloneTemplate
+
+```csharp
+public class RS_PlaneControl : MonoBehaviour
+{
+    float pitchingSpeed = 45f;  // Speed in degrees per second for pitching
+    private float rollingSpeed = 45f;
+    internal Vector3 velocity, acceleration;
+    private float thrustValue = 20f;
+    private float gravity = 9.81f;
+    float drag = 1;
+
+    public GameObject theBombCloneTemplate;
+
+    int NextBombSlotIndex = 0;
+```
