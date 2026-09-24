@@ -9,5 +9,21 @@ Depending on the circumstance, different ways of communicating between (typicaal
 
 ## The Setup
 
-Sometimes only information about position, or orientation might be required, and sometimes we maay need more specific information to be passed back and forth between scripts. How the link is made defines everything. The easiest way is through a [public variable](Variables_in_C_Sharp.md)
+Sometimes only information about position, or orientation might be required, and sometimes we may need more specific information to be passed back and forth between scripts. How the link is made defines everything. The easiest way is through a [public variable](Variables_in_C_Sharp.md)
 
+### Public Variables in Unity
+
+Advantages:
+-Easiest, intuitive
+-Can be "baked" into prefabs 
+
+Disadvantages
+-Wont work for Insatantiated Game objects or if you have a lot of objects in a given scene you'd like to link
+
+#### How?
+
+If  a script is to be linked to another object throughh a variable, a public variable is declared, which becomnes visible on the INspoector in the unity editor.  The object you'd like to link can be draagged onto the appropriate slot in the inspector.
+
+E.g. 
+
+In our game, we wished to Instantiate bombs, to do this we created a Bomb Prefab.  The plane script had a public variable 
