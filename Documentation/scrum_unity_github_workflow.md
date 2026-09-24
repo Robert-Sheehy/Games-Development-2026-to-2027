@@ -35,26 +35,17 @@ Your job is to clarify *what* you are building before writing code.
 
 ### 💻 Phase 3: Implement (Role: Developer)
 Now you build the feature locally on your machine.
-1. Open your terminal or Git Client and create a dedicated branch stemming from `main`:
-   ```bash
-   git checkout -b feature/task-s[YourNumber]
-   ```
-2. Open Unity and implement your feature. Keep your scopes tight! If it doesn't need to be accessed by other scripts, make it `private`.
-3. Save your scene, assets, and scripts. Commit your changes with a descriptive message:
-   ```bash
-   git add .
-   git commit -m "Implemented core mechanics for task s[YourNumber] with private fields"
-   git push origin feature/task-s[YourNumber]
-   ```
-4. Go to GitHub and open a **Pull Request (PR)** from your branch into `main`. Set your designated Tester as the **Reviewer**.
+
+- Sync Fork
+- Update/Clone onto local copy
+- Create dedicated development and test scene
+- Create solution
+- push to personal
+- pull request
 
 ### 🔍 Phase 4: Test (Role: Tester)
-*You are responsible for making sure broken code never hits the main branch.*
-1. Fetch the Developer's branch down to your local machine:
-   ```bash
-   git fetch origin
-   git checkout feature/task-s[YourNumber]
-   ```
+
+1. Bring down updated versio with code to test
 2. Open Unity. Execute the exact test steps you outlined in **Phase 2**.
 3. Inspect their C# script code to ensure they used appropriate C# variable rules (e.g., they didn't make variables `public` when they should have used `private` or `[SerializeField]`).
 4. **If it passes:** Go to the GitHub Pull Request, select **Review Changes**, write your feedback, and click **Approve**.
