@@ -6,7 +6,7 @@ public class RD_movementScript : MonoBehaviour
     private float pitchingSpeed = 45f;
     private float rollingSpeed = 45f;
     private float thrustValue = 30f;
-    private Vector3 velocity, acceleration;
+    internal Vector3 velocity, acceleration;
     private float gravity = 9.81f;
     private float drag = 1;
     public GameObject theBombCloneTemplate;
@@ -17,8 +17,9 @@ public class RD_movementScript : MonoBehaviour
         r.material.color = Color.red;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    int dropBombSlotIndex = 0;
+
+    private void Awake()
     {
         bombSlots = GetComponentsInChildren<RD_bombSlotScript>();
 
@@ -26,6 +27,12 @@ public class RD_movementScript : MonoBehaviour
         {
             bombSlots[i].iAmTheBoss(this);
         }
+    }
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+
     }
 
     // Update is called once per frame
@@ -77,9 +84,10 @@ public class RD_movementScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            GameObject newBombGO = Instantiate(theBombCloneTemplate, transform.position, transform.rotation);
-            RD_bombScript theNewBombScript = newBombGO.GetComponent<RD_bombScript>();
-            theNewBombScript.setInitialVelocity(velocity);
+            // Drop bomb
+            bombSlots[dropBombSlotIndex].dropTheBomb();
+
+            dropBombSlotIndex = (dropBombSlotIndex + 1) % bombSlots.Length;
         }
     }
 }
