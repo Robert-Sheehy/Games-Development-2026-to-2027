@@ -1,5 +1,6 @@
 ##Main Idea
-For the creating of the script that showing a text I will firstly create a simple reusable C# script called "KK_TetxtScript" it will contain 2 functions one will be called "ShowText(string message)" which will be take a string argument as a specific message that will be displayed and another one will be called "ClearText()"
+For the creating of the script that showing a text I will firstly create a simple reusable C# script called "KK_TetxtScript" it will contain 2 functions one will be called "ShowText(string message)" which will be take a string argument
+as a specific message that will be displayed and another one will be called "ClearText()"
 
 ##Main Components
   - Canvas
