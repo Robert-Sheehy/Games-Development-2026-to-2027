@@ -50,3 +50,11 @@ Finally Normals are used in Lighting, and each face has a normal which is a unit
 
 
 
+<img width="1695" height="811" alt="image" src="https://github.com/user-attachments/assets/c14a6c44-ca6b-4b3f-b757-ea0f595ad807" />
+
+
+<img width="964" height="586" alt="image" src="https://github.com/user-attachments/assets/d7dcc0c3-faee-487e-b731-52bba0391ae1" />
+
+
+
+
